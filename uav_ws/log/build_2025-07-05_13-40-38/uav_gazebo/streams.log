@@ -1,0 +1,35 @@
+[0.011s] Invoking command in '/home/tingsheng/Documents/Personal/uav_ws/build/uav_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tingsheng/ws_isaacsim/install/isaac_ros_navigation_goal:/home/tingsheng/ws_moveit/install/moveit_configs_utils:/home/tingsheng/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/tingsheng/Documents/Personal/uav_ws/build/uav_gazebo -- -j16 -l16
+[0.056s] Invoked command in '/home/tingsheng/Documents/Personal/uav_ws/build/uav_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tingsheng/ws_isaacsim/install/isaac_ros_navigation_goal:/home/tingsheng/ws_moveit/install/moveit_configs_utils:/home/tingsheng/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/tingsheng/Documents/Personal/uav_ws/build/uav_gazebo -- -j16 -l16
+[0.057s] Invoking command in '/home/tingsheng/Documents/Personal/uav_ws/build/uav_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tingsheng/ws_isaacsim/install/isaac_ros_navigation_goal:/home/tingsheng/ws_moveit/install/moveit_configs_utils:/home/tingsheng/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/tingsheng/Documents/Personal/uav_ws/build/uav_gazebo
+[0.064s] -- Install configuration: ""
+[0.064s] -- Execute custom install script
+[0.064s] -- Up-to-date symlink: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo//launch/gazebo_sim.launch.py
+[0.065s] -- Up-to-date symlink: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo//models/palm_oil_plantation/81ai2k8rqg-Date_palm/Bottom_T.jpg
+[0.065s] -- Up-to-date symlink: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo//models/palm_oil_plantation/81ai2k8rqg-Date_palm/Bottom_Trunk.bmp
+[0.065s] -- Up-to-date symlink: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo//models/palm_oil_plantation/81ai2k8rqg-Date_palm/Date Palm.3ds
+[0.065s] -- Up-to-date symlink: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo//models/palm_oil_plantation/81ai2k8rqg-Date_palm/Date Palm.mtl
+[0.065s] -- Up-to-date symlink: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo//models/palm_oil_plantation/81ai2k8rqg-Date_palm/Date Palm.obj
+[0.065s] -- Up-to-date symlink: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo//models/palm_oil_plantation/meshes/Bottom_Trunk.bmp.001.bmp
+[0.065s] -- Up-to-date symlink: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo//models/palm_oil_plantation/meshes/dirt.png
+[0.065s] -- Up-to-date symlink: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo//models/palm_oil_plantation/meshes/palm_oil_plantation.blend
+[0.065s] -- Up-to-date symlink: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo//models/palm_oil_plantation/meshes/palm_oil_plantation.blend1
+[0.065s] -- Up-to-date symlink: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo//models/palm_oil_plantation/meshes/palm_oil_plantation.dae
+[0.065s] -- Up-to-date symlink: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo//models/palm_oil_plantation/model.config
+[0.065s] -- Up-to-date symlink: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo//models/palm_oil_plantation/model.sdf
+[0.065s] -- Up-to-date symlink: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo//world/palm_oil_plantation.sdf
+[0.065s] -- Up-to-date symlink: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/ament_index/resource_index/package_run_dependencies/uav_gazebo
+[0.065s] -- Up-to-date symlink: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/ament_index/resource_index/parent_prefix_path/uav_gazebo
+[0.066s] -- Up-to-date symlink: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo/environment/ament_prefix_path.sh
+[0.066s] -- Up-to-date symlink: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo/environment/ament_prefix_path.dsv
+[0.066s] -- Up-to-date symlink: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo/environment/path.sh
+[0.066s] -- Up-to-date symlink: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo/environment/path.dsv
+[0.066s] -- Up-to-date symlink: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo/local_setup.bash
+[0.066s] -- Up-to-date symlink: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo/local_setup.sh
+[0.066s] -- Up-to-date symlink: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo/local_setup.zsh
+[0.066s] -- Up-to-date symlink: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo/local_setup.dsv
+[0.066s] -- Symlinking: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo/package.dsv
+[0.075s] -- Up-to-date symlink: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/ament_index/resource_index/packages/uav_gazebo
+[0.075s] -- Up-to-date symlink: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo/cmake/uav_gazeboConfig.cmake
+[0.076s] -- Up-to-date symlink: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo/cmake/uav_gazeboConfig-version.cmake
+[0.076s] -- Up-to-date symlink: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo/package.xml
+[0.087s] Invoked command in '/home/tingsheng/Documents/Personal/uav_ws/build/uav_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tingsheng/ws_isaacsim/install/isaac_ros_navigation_goal:/home/tingsheng/ws_moveit/install/moveit_configs_utils:/home/tingsheng/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/tingsheng/Documents/Personal/uav_ws/build/uav_gazebo

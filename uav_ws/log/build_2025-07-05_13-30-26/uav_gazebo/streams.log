@@ -1,0 +1,60 @@
+[0.011s] Invoking command in '/home/tingsheng/Documents/Personal/uav_ws/build/uav_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tingsheng/ws_isaacsim/install/isaac_ros_navigation_goal:/home/tingsheng/ws_moveit/install/moveit_configs_utils:/home/tingsheng/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake /home/tingsheng/Documents/Personal/uav_ws/src/uav_gazebo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo
+[0.082s] -- The C compiler identification is GNU 11.4.0
+[0.138s] -- The CXX compiler identification is GNU 11.4.0
+[0.147s] -- Detecting C compiler ABI info
+[0.214s] -- Detecting C compiler ABI info - done
+[0.220s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.220s] -- Detecting C compile features
+[0.221s] -- Detecting C compile features - done
+[0.223s] -- Detecting CXX compiler ABI info
+[0.297s] -- Detecting CXX compiler ABI info - done
+[0.303s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.303s] -- Detecting CXX compile features
+[0.303s] -- Detecting CXX compile features - done
+[0.312s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.459s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.515s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.603s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.705s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.706s] -- Added test 'lint_cmake' to check CMake code style
+[0.707s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.709s] -- Added test 'xmllint' to check XML markup files
+[0.712s] -- Configuring done
+[0.714s] -- Generating done
+[0.715s] -- Build files have been written to: /home/tingsheng/Documents/Personal/uav_ws/build/uav_gazebo
+[0.718s] Invoked command in '/home/tingsheng/Documents/Personal/uav_ws/build/uav_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tingsheng/ws_isaacsim/install/isaac_ros_navigation_goal:/home/tingsheng/ws_moveit/install/moveit_configs_utils:/home/tingsheng/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake /home/tingsheng/Documents/Personal/uav_ws/src/uav_gazebo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo
+[0.721s] Invoking command in '/home/tingsheng/Documents/Personal/uav_ws/build/uav_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tingsheng/ws_isaacsim/install/isaac_ros_navigation_goal:/home/tingsheng/ws_moveit/install/moveit_configs_utils:/home/tingsheng/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/tingsheng/Documents/Personal/uav_ws/build/uav_gazebo -- -j16 -l16
+[0.758s] Invoked command in '/home/tingsheng/Documents/Personal/uav_ws/build/uav_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tingsheng/ws_isaacsim/install/isaac_ros_navigation_goal:/home/tingsheng/ws_moveit/install/moveit_configs_utils:/home/tingsheng/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/tingsheng/Documents/Personal/uav_ws/build/uav_gazebo -- -j16 -l16
+[0.767s] Invoking command in '/home/tingsheng/Documents/Personal/uav_ws/build/uav_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tingsheng/ws_isaacsim/install/isaac_ros_navigation_goal:/home/tingsheng/ws_moveit/install/moveit_configs_utils:/home/tingsheng/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/tingsheng/Documents/Personal/uav_ws/build/uav_gazebo
+[0.774s] -- Install configuration: ""
+[0.774s] -- Execute custom install script
+[0.775s] -- Symlinking: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo//launch/gazebo_sim.launch.py
+[0.784s] -- Symlinking: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo//models/palm_oil_plantation/81ai2k8rqg-Date_palm/Bottom_T.jpg
+[0.792s] -- Symlinking: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo//models/palm_oil_plantation/81ai2k8rqg-Date_palm/Bottom_Trunk.bmp
+[0.801s] -- Symlinking: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo//models/palm_oil_plantation/81ai2k8rqg-Date_palm/Date Palm.3ds
+[0.811s] -- Symlinking: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo//models/palm_oil_plantation/81ai2k8rqg-Date_palm/Date Palm.mtl
+[0.820s] -- Symlinking: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo//models/palm_oil_plantation/81ai2k8rqg-Date_palm/Date Palm.obj
+[0.829s] -- Symlinking: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo//models/palm_oil_plantation/meshes/Bottom_Trunk.bmp.001.bmp
+[0.838s] -- Symlinking: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo//models/palm_oil_plantation/meshes/dirt.png
+[0.846s] -- Symlinking: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo//models/palm_oil_plantation/meshes/palm_oil_plantation.blend
+[0.853s] -- Symlinking: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo//models/palm_oil_plantation/meshes/palm_oil_plantation.blend1
+[0.861s] -- Symlinking: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo//models/palm_oil_plantation/meshes/palm_oil_plantation.dae
+[0.869s] -- Symlinking: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo//models/palm_oil_plantation/model.config
+[0.876s] -- Symlinking: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo//models/palm_oil_plantation/model.sdf
+[0.885s] -- Symlinking: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo//world/empty.sdf
+[0.893s] -- Symlinking: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/ament_index/resource_index/package_run_dependencies/uav_gazebo
+[0.901s] -- Symlinking: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/ament_index/resource_index/parent_prefix_path/uav_gazebo
+[0.910s] -- Symlinking: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo/environment/ament_prefix_path.sh
+[0.919s] -- Symlinking: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo/environment/ament_prefix_path.dsv
+[0.928s] -- Symlinking: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo/environment/path.sh
+[0.938s] -- Symlinking: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo/environment/path.dsv
+[0.948s] -- Symlinking: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo/local_setup.bash
+[0.956s] -- Symlinking: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo/local_setup.sh
+[0.966s] -- Symlinking: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo/local_setup.zsh
+[0.975s] -- Symlinking: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo/local_setup.dsv
+[0.984s] -- Symlinking: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo/package.dsv
+[0.993s] -- Symlinking: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/ament_index/resource_index/packages/uav_gazebo
+[1.002s] -- Symlinking: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo/cmake/uav_gazeboConfig.cmake
+[1.011s] -- Symlinking: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo/cmake/uav_gazeboConfig-version.cmake
+[1.021s] -- Symlinking: /home/tingsheng/Documents/Personal/uav_ws/install/uav_gazebo/share/uav_gazebo/package.xml
+[1.033s] Invoked command in '/home/tingsheng/Documents/Personal/uav_ws/build/uav_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tingsheng/ws_isaacsim/install/isaac_ros_navigation_goal:/home/tingsheng/ws_moveit/install/moveit_configs_utils:/home/tingsheng/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/tingsheng/Documents/Personal/uav_ws/build/uav_gazebo
