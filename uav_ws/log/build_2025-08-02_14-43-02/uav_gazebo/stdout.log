@@ -1,0 +1,73 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/build/uav_gazebo
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo//launch/gazebo_sim.launch.py
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo//models/X3/materials/textures/led.jpg
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo//models/X3/materials/textures/spotlight.jpg
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo//models/X3/meshes/iris.dae
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo//models/X3/meshes/led.dae
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo//models/X3/meshes/led_lamp.dae
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo//models/X3/meshes/propeller_ccw.dae
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo//models/X3/meshes/propeller_cw.dae
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo//models/X3/meshes/spotlight.dae
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo//models/X3/meshes/vi_camera.dae
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo//models/X3/meshes/vi_camera.jpg
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo//models/X3/meshes/vi_sensor.dae
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo//models/X3/meshes/vi_sensor.jpg
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo//models/X3/meshes/x3.dae
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo//models/X3/meshes/x3.jpg
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo//models/X3/model.config
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo//models/X3/model.sdf
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo//models/X3/thumbnails/1.jpg
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo//models/X3/thumbnails/2.jpg
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo//models/X3/thumbnails/3.jpg
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo//models/X3/thumbnails/4.jpg
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo//models/X3/thumbnails/5.jpg
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo//models/palm_oil_plantation/81ai2k8rqg-Date_palm/Bottom_T.jpg
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo//models/palm_oil_plantation/81ai2k8rqg-Date_palm/Bottom_Trunk.bmp
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo//models/palm_oil_plantation/81ai2k8rqg-Date_palm/Date Palm.3ds
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo//models/palm_oil_plantation/81ai2k8rqg-Date_palm/Date Palm.mtl
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo//models/palm_oil_plantation/81ai2k8rqg-Date_palm/Date Palm.obj
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo//models/palm_oil_plantation/meshes/Bottom_Trunk.bmp.001.bmp
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo//models/palm_oil_plantation/meshes/Bottom_Trunk.bmp.002.bmp
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo//models/palm_oil_plantation/meshes/dirt.png
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo//models/palm_oil_plantation/meshes/palm_oil_plantation.blend
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo//models/palm_oil_plantation/meshes/palm_oil_plantation.blend1
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo//models/palm_oil_plantation/meshes/palm_oil_plantation.dae
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo//models/palm_oil_plantation/model.config
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo//models/palm_oil_plantation/model.sdf
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo//world/palm_oil_plantation.sdf
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo//config/standard.config
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/ament_index/resource_index/package_run_dependencies/uav_gazebo
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/ament_index/resource_index/parent_prefix_path/uav_gazebo
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo/environment/ament_prefix_path.sh
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo/environment/ament_prefix_path.dsv
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo/environment/path.sh
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo/environment/path.dsv
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo/local_setup.bash
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo/local_setup.sh
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo/local_setup.zsh
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo/local_setup.dsv
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo/package.dsv
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/ament_index/resource_index/packages/uav_gazebo
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo/cmake/uav_gazeboConfig.cmake
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo/cmake/uav_gazeboConfig-version.cmake
+-- Symlinking: /home/tingsheng/Documents/Personal/drone_playground/uav_ws/install/uav_gazebo/share/uav_gazebo/package.xml
