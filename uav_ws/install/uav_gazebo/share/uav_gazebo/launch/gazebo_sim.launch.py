@@ -1,1 +1,0 @@
-/home/tingsheng/Documents/Personal/drone_playground/uav_ws/src/uav_gazebo/launch/gazebo_sim.launch.py

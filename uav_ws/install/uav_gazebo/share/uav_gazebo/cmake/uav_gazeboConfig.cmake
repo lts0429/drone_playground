@@ -1,1 +1,0 @@
-/home/tingsheng/Documents/Personal/drone_playground/uav_ws/build/uav_gazebo/ament_cmake_core/uav_gazeboConfig.cmake
