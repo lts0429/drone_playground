@@ -4,4 +4,5 @@ This repo is learning project on how setup autonomous navigation on drone
 # Milestones
 - [x] setup gazebo environment
 - [x] spawn drone
-- [ ] setup PX4
+- [ ] setup EKF for localization
+- [ ] visualize drone position in RVIZ
