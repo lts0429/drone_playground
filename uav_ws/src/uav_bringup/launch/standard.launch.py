@@ -1,9 +1,13 @@
 import os
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
+from launch_ros.actions import Node
 from launch.substitutions import LaunchConfiguration
+from launch_ros.substitutions import FindPackageShare
+from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
 from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
+from launch_ros.parameter_descriptions import ParameterValue
 from launch.conditions import IfCondition
 
 def generate_launch_description():
@@ -40,6 +44,34 @@ def generate_launch_description():
     nodes += [gazebo_node]
     #endregion
     
+    #region: Bridge
+    bridge_config = PathJoinSubstitution([FindPackageShare('uav_gazebo'), 'config', 'bridge_config.yaml'])
+    bridge_node = Node(
+        package='ros_gz_bridge',
+        executable='parameter_bridge',
+        name='parameter_bridge',
+        parameters=[{
+            'config_file': ParameterValue(bridge_config, value_type=str)
+        }]
+    )
+    nodes += [bridge_node]
+    #endregion
+    
+    #region: rviz
+    rviz_config_file = PathJoinSubstitution([
+        FindPackageShare('uav_bringup'),
+        'config',
+        'standard.rviz'
+    ])
+    rviz_node = Node(
+        package='rviz2',
+        executable='rviz2',
+        name='rviz2',
+        output='screen',
+        arguments=['-d', rviz_config_file],
+        parameters=[{'use_sim_time': sim}]
+    )
+    nodes += [rviz_node]
     #endregion
 
     return LaunchDescription(nodes)
