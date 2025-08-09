@@ -1,5 +1,5 @@
 # Introduction
-This repo is learning project on how setup autonomous navigation on drone
+This repo is a learning project on how setup autonomous navigation on drone
 
 # Milestones
 - [x] setup gazebo environment
