@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <sdf version="1.6">
-    <model name="X3">
+    <model name="X3_custom">
         <pose>0 0 0.053302 0 0 0</pose>
         <link name="base_link">
             <pose frame="">0 0 0 0 -0 0</pose>
@@ -29,7 +29,7 @@
                 <geometry>
                     <mesh>
                         <scale>1 1 1</scale>
-                        <uri>model://X3/meshes/x3.dae</uri>
+                        <uri>model://X3_custom/meshes/x3.dae</uri>
                     </mesh>
                 </geometry>
             </visual>
@@ -37,7 +37,7 @@
                 <pose frame="">-0.07 0 0.065 0 -0 0</pose>
                 <geometry>
                     <mesh>
-                        <uri>model://X3/meshes/led.dae</uri>
+                        <uri>model://X3_custom/meshes/led.dae</uri>
                     </mesh>
                 </geometry>
             </visual>
@@ -46,7 +46,7 @@
                 <geometry>
                     <mesh>
                         <scale>0.01 0.01 0.01</scale>
-                        <uri>model://X3/meshes/spotlight.dae</uri>
+                        <uri>model://X3_custom/meshes/spotlight.dae</uri>
                     </mesh>
                 </geometry>
             </visual>
@@ -55,7 +55,7 @@
                 <geometry>
                     <mesh>
                         <scale>0.01 0.01 0.01</scale>
-                        <uri>model://X3/meshes/spotlight.dae</uri>
+                        <uri>model://X3_custom/meshes/spotlight.dae</uri>
                     </mesh>
                 </geometry>
             </visual>
@@ -63,7 +63,7 @@
                 <pose frame="">-0.08 0.037 0.04 -1.0472 -0 0.2</pose>
                 <geometry>
                     <mesh>
-                        <uri>model://X3/meshes/led.dae</uri>
+                        <uri>model://X3_custom/meshes/led.dae</uri>
                     </mesh>
                 </geometry>
             </visual>
@@ -72,7 +72,7 @@
                 <geometry>
                     <mesh>
                         <scale>0.01 0.01 0.01</scale>
-                        <uri>model://X3/meshes/spotlight.dae</uri>
+                        <uri>model://X3_custom/meshes/spotlight.dae</uri>
                     </mesh>
                 </geometry>
             </visual>
@@ -80,7 +80,7 @@
                 <pose frame="">-0.08 -0.035 0.04 1.0472 -0 -0.1</pose>
                 <geometry>
                     <mesh>
-                        <uri>model://X3/meshes/led.dae</uri>
+                        <uri>model://X3_custom/meshes/led.dae</uri>
                     </mesh>
                 </geometry>
             </visual>
@@ -147,19 +147,21 @@
             </light>
 
             <sensor name="imu_sensor" type="imu">
+                <topic>imu</topic>
+                <ignition_frame_id>base_link</ignition_frame_id>
                 <always_on>1</always_on>
                 <update_rate>250</update_rate>
                 <imu>
-                    <enable_orientation>0</enable_orientation>
-                    <angular_velocity>
+                    <enable_orientation>1</enable_orientation>
+                    <!-- <angular_velocity>
                         <x>
-                            <noise type="gaussian">
+                            <noise type="gaussian"> -->
                                 <mean>0</mean>
                                 <stddev>0.009</stddev>
                                 <bias_mean>0.00075</bias_mean>
                                 <bias_stddev>0.005</bias_stddev>
                                 <dynamic_bias_stddev>0.00002</dynamic_bias_stddev>
-				<dynamic_bias_correlation_time>400.0</dynamic_bias_correlation_time>
+				<!-- <dynamic_bias_correlation_time>400.0</dynamic_bias_correlation_time>
 				<precision>0.00025</precision>
                             </noise>
                         </x>
@@ -220,7 +222,7 @@
 				<precision>0.005</precision>
                             </noise>
                         </z>
-                    </linear_acceleration>
+                    </linear_acceleration> -->
                 </imu>
 
             </sensor>
@@ -257,6 +259,34 @@
                         </noise>
                     </z>
                 </magnetometer>
+            </sensor>
+            <sensor name='gpu_lidar' type='gpu_lidar'>
+                <topic>scan</topic>
+                <ignition_frame_id>base_link</ignition_frame_id>
+                <update_rate>10</update_rate>
+                <ray>
+                    <scan>
+                        <horizontal>
+                            <samples>640</samples>
+                            <resolution>1</resolution>
+                            <min_angle>-3.1412</min_angle>
+                            <max_angle>3.1412</max_angle>
+                        </horizontal>
+                        <vertical>
+                            <samples>1</samples>
+                            <resolution>0.01</resolution>
+                            <min_angle>0</min_angle>
+                            <max_angle>0</max_angle>
+                        </vertical>
+                    </scan>
+                    <range>
+                        <min>0.5</min>
+                        <max>100.0</max>
+                        <resolution>0.01</resolution>
+                    </range>
+                </ray>
+                <always_on>1</always_on>
+                <visualize>true</visualize>
             </sensor>
 
             <visual name="camera_visual">
@@ -349,7 +379,7 @@
                 <geometry>
                     <mesh>
                         <scale>0.1 0.1 0.1</scale>
-                        <uri>model://X3/meshes/propeller_ccw.dae</uri>
+                        <uri>model://X3_custom/meshes/propeller_ccw.dae</uri>
                     </mesh>
                 </geometry>
                 <material>
@@ -416,7 +446,7 @@
                 <geometry>
                     <mesh>
                         <scale>0.1 0.1 0.1</scale>
-                        <uri>model://X3/meshes/propeller_ccw.dae</uri>
+                        <uri>model://X3_custom/meshes/propeller_ccw.dae</uri>
                     </mesh>
                 </geometry>
                 <material>
@@ -483,7 +513,7 @@
                 <geometry>
                     <mesh>
                         <scale>0.1 0.1 0.1</scale>
-                        <uri>model://X3/meshes/propeller_cw.dae</uri>
+                        <uri>model://X3_custom/meshes/propeller_cw.dae</uri>
                     </mesh>
                 </geometry>
                 <material>
@@ -550,7 +580,7 @@
                 <geometry>
                     <mesh>
                         <scale>0.1 0.1 0.1</scale>
-                        <uri>model://X3/meshes/propeller_cw.dae</uri>
+                        <uri>model://X3_custom/meshes/propeller_cw.dae</uri>
                     </mesh>
                 </geometry>
                 <material>
@@ -585,7 +615,7 @@
         <plugin
             filename="ignition-gazebo-multicopter-control-system"
             name="ignition::gazebo::systems::MulticopterVelocityControl">
-            <robotNamespace>X3</robotNamespace>
+            <robotNamespace>X3_custom</robotNamespace>
             <commandSubTopic>cmd_vel</commandSubTopic>
             <enableSubTopic>enable</enableSubTopic>
             <comLinkName>base_link</comLinkName>
@@ -624,7 +654,7 @@
         <plugin
             filename="ignition-gazebo-multicopter-motor-model-system"
             name="gz::sim::systems::MulticopterMotorModel">
-            <robotNamespace>X3</robotNamespace>
+            <robotNamespace>X3_custom</robotNamespace>
             <jointName>rotor_0_joint</jointName>
             <linkName>rotor_0</linkName>
             <turningDirection>ccw</turningDirection>
@@ -644,7 +674,7 @@
         <plugin
             filename="ignition-gazebo-multicopter-motor-model-system"
             name="gz::sim::systems::MulticopterMotorModel">
-            <robotNamespace>X3</robotNamespace>
+            <robotNamespace>X3_custom</robotNamespace>
             <jointName>rotor_1_joint</jointName>
             <linkName>rotor_1</linkName>
             <turningDirection>ccw</turningDirection>
@@ -664,7 +694,7 @@
         <plugin
             filename="ignition-gazebo-multicopter-motor-model-system"
             name="gz::sim::systems::MulticopterMotorModel">
-            <robotNamespace>X3</robotNamespace>
+            <robotNamespace>X3_custom</robotNamespace>
             <jointName>rotor_2_joint</jointName>
             <linkName>rotor_2</linkName>
             <turningDirection>cw</turningDirection>
@@ -684,7 +714,7 @@
         <plugin
             filename="ignition-gazebo-multicopter-motor-model-system"
             name="gz::sim::systems::MulticopterMotorModel">
-            <robotNamespace>X3</robotNamespace>
+            <robotNamespace>X3_custom</robotNamespace>
             <jointName>rotor_3_joint</jointName>
             <linkName>rotor_3</linkName>
             <turningDirection>cw</turningDirection>

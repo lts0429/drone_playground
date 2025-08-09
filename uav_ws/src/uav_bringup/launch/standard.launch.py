@@ -56,7 +56,23 @@ def generate_launch_description():
     )
     nodes += [bridge_node]
     #endregion
-    
+
+    # #region: navigation
+    # navigation_node = IncludeLaunchDescription(
+    #     PythonLaunchDescriptionSource(
+    #         os.path.join(
+    #             get_package_share_directory('uav_navigation'),
+    #             'launch',
+    #             'full_navigation.launch.py'
+    #         )
+    #     ),
+    #     launch_arguments={
+    #         'use_sim_time': sim
+    #     }.items()
+    # )
+    # nodes += [navigation_node]
+    # #endregion
+
     #region: rviz
     rviz_config_file = PathJoinSubstitution([
         FindPackageShare('uav_bringup'),

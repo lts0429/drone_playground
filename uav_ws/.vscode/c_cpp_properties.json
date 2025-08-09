@@ -1,0 +1,58 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${workspaceFolder}/.vscode/browse.vc.db",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/tingsheng/ws_isaacsim/install/isaac_ros2_messages/include/**",
+        "/home/tingsheng/ws_isaacsim/install/custom_message/include/**",
+        "/home/tingsheng/ws_moveit/install/pilz_industrial_motion_planner_testutils/include/**",
+        "/home/tingsheng/ws_moveit/install/pilz_industrial_motion_planner/include/**",
+        "/home/tingsheng/ws_moveit/install/moveit_visual_tools/include/**",
+        "/home/tingsheng/ws_moveit/install/moveit_task_constructor_visualization/include/**",
+        "/home/tingsheng/ws_moveit/install/moveit_task_constructor_demo/include/**",
+        "/home/tingsheng/ws_moveit/install/moveit_task_constructor_core/include/**",
+        "/home/tingsheng/ws_moveit/install/moveit_ros_control_interface/include/**",
+        "/home/tingsheng/ws_moveit/install/moveit_simple_controller_manager/include/**",
+        "/home/tingsheng/ws_moveit/install/moveit_setup_assistant/include/**",
+        "/home/tingsheng/ws_moveit/install/moveit_setup_srdf_plugins/include/**",
+        "/home/tingsheng/ws_moveit/install/moveit_setup_core_plugins/include/**",
+        "/home/tingsheng/ws_moveit/install/moveit_setup_controllers/include/**",
+        "/home/tingsheng/ws_moveit/install/moveit_setup_app_plugins/include/**",
+        "/home/tingsheng/ws_moveit/install/moveit_setup_framework/include/**",
+        "/home/tingsheng/ws_moveit/install/moveit_servo/include/**",
+        "/home/tingsheng/ws_moveit/install/moveit_ros_visualization/include/**",
+        "/home/tingsheng/ws_moveit/install/moveit_hybrid_planning/include/**",
+        "/home/tingsheng/ws_moveit/install/moveit_ros_planning_interface/include/**",
+        "/home/tingsheng/ws_moveit/install/moveit_ros_benchmarks/include/**",
+        "/home/tingsheng/ws_moveit/install/moveit_ros_warehouse/include/**",
+        "/home/tingsheng/ws_moveit/install/moveit_ros_robot_interaction/include/**",
+        "/home/tingsheng/ws_moveit/install/moveit_ros_perception/include/**",
+        "/home/tingsheng/ws_moveit/install/moveit_ros_move_group/include/**",
+        "/home/tingsheng/ws_moveit/install/moveit_planners_ompl/include/**",
+        "/home/tingsheng/ws_moveit/install/moveit_ros_planning/include/**",
+        "/home/tingsheng/ws_moveit/install/moveit_ros_occupancy_map_monitor/include/**",
+        "/home/tingsheng/ws_moveit/install/moveit_kinematics/include/**",
+        "/home/tingsheng/ws_moveit/install/chomp_motion_planner/include/**",
+        "/home/tingsheng/ws_moveit/install/moveit_core/include/**",
+        "/home/tingsheng/ws_moveit/install/srdfdom/include/**",
+        "/home/tingsheng/ws_moveit/install/rviz_marker_tools/include/**",
+        "/home/tingsheng/ws_moveit/install/rosparam_shortcuts/include/**",
+        "/home/tingsheng/ws_moveit/install/moveit_task_constructor_msgs/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/tingsheng/Documents/Personal/drone_playground/uav_ws/src/uav_bringup/include/**",
+        "/home/tingsheng/Documents/Personal/drone_playground/uav_ws/src/uav_gazebo/include/**",
+        "/home/tingsheng/Documents/Personal/drone_playground/uav_ws/src/uav_navigation/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ros2",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++17"
+    }
+  ],
+  "version": 4
+}

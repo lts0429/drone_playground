@@ -76,8 +76,37 @@
         <uri>model://palm_oil_plantation</uri>
       </include>
 
+      <model name="drone_start_platform">
+        <static>true</static>
+        <pose>5 5 0.25 0 0 0</pose>
+        <link name="platform_link">
+          <collision name="platform_collision">
+            <geometry>
+              <box>
+                <size>0.5 0.5 0.5</size>
+              </box>
+            </geometry>
+          </collision>
+          <visual name="platform_visual">
+            <geometry>
+              <box>
+                <size>0.5 0.5 0.5</size>
+              </box>
+            </geometry>
+            <material>
+              <ambient>0.2 0.2 0.2 1</ambient>
+              <diffuse>0.2 0.2 0.2 1</diffuse>
+            </material>
+          </visual>
+        </link>
+      </model>
+
+      <!-- <include>
+        <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Ground Plane</uri>
+      </include> -->
+      
       <include>
-        <uri>model://X3</uri>
+        <uri>model://X3_custom</uri>
         <pose>5 5 1 0 0 0</pose>
       </include>
 
