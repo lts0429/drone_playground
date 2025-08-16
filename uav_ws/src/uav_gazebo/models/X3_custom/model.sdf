@@ -298,11 +298,12 @@
                 </geometry>
             </visual>
 
-            <sensor name="camera_front" type="camera">
-                <pose>0.1 0 0 0 0 0</pose>
+            <sensor name="camera_left" type="camera">
+                <ignition_frame_id>camera_left</ignition_frame_id>
+                <pose>0.1 -0.025 0 0 0 0</pose>
                 <always_on>1</always_on>
                 <update_rate>20</update_rate>
-                <camera name="camera_front">
+                <camera name="camera_left">
                     <!--<cameraInfoTopicName>camera_info</cameraInfoTopicName>-->
                     <!--<hackBaseline>0.07</hackBaseline>-->
                     <horizontal_fov>2</horizontal_fov>
@@ -342,6 +343,53 @@
                     </noise>
                 </camera>
             </sensor>
+
+            <sensor name="camera_right" type="camera">
+                <ignition_frame_id>camera_right</ignition_frame_id>
+                <pose>0.1 -0.025 0 0 0 0</pose>
+                <always_on>1</always_on>
+                <update_rate>20</update_rate>
+                <camera name="camera_right">
+                    <!--<cameraInfoTopicName>camera_info</cameraInfoTopicName>-->
+                    <!--<hackBaseline>0.07</hackBaseline>-->
+                    <horizontal_fov>2</horizontal_fov>
+                    <lens>
+                        <intrinsics>
+                          <!-- fx = fy = width / ( 2 * tan (hfov / 2 ) ) -->
+                          <fx>277.1</fx>
+                          <fy>277.1</fy>
+                          <!-- cx = ( width + 1 ) / 2 -->
+                          <cx>160.5</cx>
+                          <!-- cy = ( height + 1 ) / 2 -->
+                          <cy>120.5</cy>
+                          <s>0</s>
+                        </intrinsics>
+                    </lens>
+                    <distortion>
+                        <k1>0.0</k1>
+                        <k2>0.0</k2>
+                        <k3>0.0</k3>
+                        <p1>0.0</p1>
+                        <p2>0.0</p2>
+                        <center>0.5 0.5</center>
+                    </distortion>
+                    <image>
+                        <width>320</width>
+                        <height>240</height>
+                        <format>R8G8B8</format>
+                    </image>
+                    <clip>
+                        <near>0.01</near>
+                        <far>300</far>
+                    </clip>
+                    <noise>
+                        <type>gaussian</type>
+                        <mean>0</mean>
+                        <stddev>0.007</stddev>
+                    </noise>
+                </camera>
+            </sensor>
+
         </link>
         <link name="rotor_0">
             <pose frame="">0.13 -0.22 0.023 0 -0 0</pose>

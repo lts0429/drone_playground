@@ -29,7 +29,8 @@ def generate_launch_description():
         description='world to spawn in gazebo'
     )
     world = LaunchConfiguration('world')
-    nodes += [world_arg]  
+    nodes += [world_arg]
+      
     #endregion
     
     #region: nodes and launches
