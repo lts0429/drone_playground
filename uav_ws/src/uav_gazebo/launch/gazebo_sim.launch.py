@@ -34,5 +34,15 @@ def generate_launch_description():
 
     nodes += [world, gazebo_node]
     #endregion
+
+    #region: Static transform from base_link to camera_link
+    static_tf_node = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        name='base_to_camera_static_tf',
+        arguments=['0.1', '0', '0', '0', '0', '0', 'base_link', 'camera_link']
+    )
+    nodes.append(static_tf_node)
+    #endregion
         
     return LaunchDescription(nodes)

@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "fstream": "cpp",
-        "core": "cpp"
+        "core": "cpp",
+        "mutex": "cpp",
+        "thread": "cpp"
     }
 }

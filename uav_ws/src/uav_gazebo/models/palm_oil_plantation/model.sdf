@@ -30,7 +30,7 @@
         </surface>
       </collision>
       <visual name="visual">
-        <cast_shadows>false</cast_shadows>
+        <cast_shadows>true</cast_shadows>
         <geometry>
           <mesh>
             <uri>model://palm_oil_plantation/meshes/palm_oil_plantation.dae</uri>
