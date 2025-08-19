@@ -52,29 +52,29 @@ def generate_launch_description():
     )
     nodes += [slam_node]  
 
-    slam_pkg_path = get_package_share_directory("orbslam3_ros2")
-    vocab_file = os.path.join(slam_pkg_path, "config", "ORBvoc.txt")
-    settings_file = os.path.join(slam_pkg_path, "config", "gazebo_stereo.yaml")
-    camera_type_arg = DeclareLaunchArgument(
-        'camera_type', default_value='stereo', description='Camera type: mono, rgbd, stereo')
-    nodes += [camera_type_arg]
+    # slam_pkg_path = get_package_share_directory("orbslam3_ros2")
+    # vocab_file = os.path.join(slam_pkg_path, "config", "ORBvoc.txt")
+    # settings_file = os.path.join(slam_pkg_path, "config", "gazebo_stereo.yaml")
+    # camera_type_arg = DeclareLaunchArgument(
+    #     'camera_type', default_value='stereo', description='Camera type: mono, rgbd, stereo')
+    # nodes += [camera_type_arg]
 
-    orb_slam_node = Node(
-        package='orbslam3_ros2',
-        executable=LaunchConfiguration('camera_type'),  # Get the executable based on camera type
-        output='screen',
-        parameters=[
-            {"vocab_path": vocab_file},
-            {"config_path": settings_file},
-            {"use_sim_time": True}
-        ],
-        arguments=['--ros-args', '--log-level', 'debug'],
-        remappings=[
-            ('/stereo/left/image_rect', '/camera_left/image'),
-            ('/stereo/right/image_rect', '/camera_right/image')
-        ]
-    )
-    nodes += [orb_slam_node]  
+    # orb_slam_node = Node(
+    #     package='orbslam3_ros2',
+    #     executable=LaunchConfiguration('camera_type'),  # Get the executable based on camera type
+    #     output='screen',
+    #     parameters=[
+    #         {"vocab_path": vocab_file},
+    #         {"config_path": settings_file},
+    #         {"use_sim_time": True}
+    #     ],
+    #     arguments=['--ros-args', '--log-level', 'debug'],
+    #     remappings=[
+    #         ('/stereo/left/image_rect', '/camera_left/image'),
+    #         ('/stereo/right/image_rect', '/camera_right/image')
+    #     ]
+    # )
+    # nodes += [orb_slam_node]  
                  
     #endregion
     

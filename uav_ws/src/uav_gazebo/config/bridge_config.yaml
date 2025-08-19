@@ -5,37 +5,37 @@
   direction: GZ_TO_ROS
 
 - ros_topic_name: "/camera_left/image"
-  gz_topic_name: "/world/ailand_field/model/X3_custom/link/base_link/sensor/camera_left/image"
+  gz_topic_name: "/camera_left"
   ros_type_name: "sensor_msgs/msg/Image"
   gz_type_name: "ignition.msgs.Image"
   direction: GZ_TO_ROS
 
 - ros_topic_name: "/camera_left/info"
-  gz_topic_name: "/world/ailand_field/model/X3_custom/link/base_link/sensor/camera_left/camera_info"
+  gz_topic_name: "/camera_left/info"
   ros_type_name: "sensor_msgs/msg/CameraInfo"
   gz_type_name: "ignition.msgs.CameraInfo"
   direction: GZ_TO_ROS
 
 - ros_topic_name: "/camera_right/image"
-  gz_topic_name: "/world/ailand_field/model/X3_custom/link/base_link/sensor/camera_right/image"
+  gz_topic_name: "/camera_right"
   ros_type_name: "sensor_msgs/msg/Image"
   gz_type_name: "ignition.msgs.Image"
   direction: GZ_TO_ROS
 
 - ros_topic_name: "/camera_right/info"
-  gz_topic_name: "/world/ailand_field/model/X3_custom/link/base_link/sensor/camera_right/camera_info"
+  gz_topic_name: "camera_right/info"
   ros_type_name: "sensor_msgs/msg/CameraInfo"
   gz_type_name: "ignition.msgs.CameraInfo"
   direction: GZ_TO_ROS
 
 - ros_topic_name: "/rgbd/image"
-  gz_topic_name: "/world/ailand_field/model/X3_custom/link/base_link/sensor/rgbd_camera/image"
+  gz_topic_name: "/rgbd/image"
   ros_type_name: "sensor_msgs/msg/Image"
   gz_type_name: "ignition.msgs.Image"
   direction: GZ_TO_ROS
 
 - ros_topic_name: "/rgbd/depth"
-  gz_topic_name: "/world/ailand_field/model/X3_custom/link/base_link/sensor/rgbd_camera/depth_image"
+  gz_topic_name: "/rgbd/depth_image"
   ros_type_name: "sensor_msgs/msg/Image"
   gz_type_name: "ignition.msgs.Image"
   direction: GZ_TO_ROS
@@ -62,4 +62,13 @@
   gz_topic_name: "/X3_custom/cmd_vel"
   ros_type_name: "geometry_msgs/msg/Twist"
   gz_type_name: "ignition.msgs.Twist"
+  direction: BIDIRECTIONAL
+
+# Service bridge for /gui/follow/offset
+- ros_service_name: "/gui/follow/offset"
+  gz_service_name: "/gui/follow/offset"
+  ros_request_type: "geometry_msgs/msg/Vector3"
+  gz_request_type: "ignition.msgs.Vector3d"
+  ros_response_type: "std_msgs/msg/Bool"
+  gz_response_type: "ignition.msgs.Boolean"
   direction: BIDIRECTIONAL

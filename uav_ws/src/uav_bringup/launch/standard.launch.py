@@ -28,9 +28,13 @@ def generate_launch_description():
         default_value='palm_oil_plantation',
         description='world to spawn in gazebo'
     )
+    # world_arg = DeclareLaunchArgument(
+    #     'world',
+    #     default_value='industrial-warehouse/industrial-warehouse',
+    #     description='world to spawn in gazebo'
+    # )
     world = LaunchConfiguration('world')
     nodes += [world_arg]
-      
     #endregion
     
     #region: nodes and launches
@@ -45,19 +49,6 @@ def generate_launch_description():
     nodes += [gazebo_node]
     #endregion
     
-    #region: Bridge
-    bridge_config = PathJoinSubstitution([FindPackageShare('uav_gazebo'), 'config', 'bridge_config.yaml'])
-    bridge_node = Node(
-        package='ros_gz_bridge',
-        executable='parameter_bridge',
-        name='parameter_bridge',
-        parameters=[{
-            'config_file': ParameterValue(bridge_config, value_type=str)
-        }]
-    )
-    nodes += [bridge_node]
-    #endregion
-
     # #region: navigation
     # navigation_node = IncludeLaunchDescription(
     #     PythonLaunchDescriptionSource(
