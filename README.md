@@ -7,8 +7,11 @@ This project explores methods and solutions for navigating drones beneath forest
 - [x] add 3d lidar
 - [x] setup EKF for localization
 - [x] setup Nav2
-- [x] implement orb slam3
-- [ ] tune orb slam3 parameter
+- [x] implement orb slam3 (stereo)
+
+# Todos
+- [] extract orb slam3 odometry
 
 ![drone_flying](doc/drone_flying.gif)
+![orb_slam3](doc/orb_slam3.gif)
 ![palm_oil_plantation](doc/palm_oil_plantation.png)

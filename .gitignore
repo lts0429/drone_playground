@@ -53,3 +53,6 @@ qtcreator-*
 CATKIN_IGNORE
 
 */.vscode/*
+
+*CameraTrajectory.txt*
+*KeyframeTrajectory.txt*

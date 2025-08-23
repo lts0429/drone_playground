@@ -62,7 +62,7 @@ def generate_launch_description():
         package='tf2_ros',
         executable='static_transform_publisher',
         name='left_camera_static_tf',
-        arguments=['0.1', '-0.05', '0', '0', '0', '0', 'base_link', 'camera_left']
+        arguments=['0.1', '0.025', '0', '0', '0', '0', 'base_link', 'camera_left']
     )
     nodes.append(left_cam_tf)
 
@@ -70,7 +70,7 @@ def generate_launch_description():
         package='tf2_ros',
         executable='static_transform_publisher',
         name='right_camera_static_tf',
-        arguments=['0.1', '0.05', '0', '0', '0', '0', 'base_link', 'camera_right']
+        arguments=['0.1', '-0.025', '0', '0', '0', '0', 'base_link', 'camera_right']
     )
     nodes.append(right_cam_tf)
     #endregion
