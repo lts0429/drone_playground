@@ -1,7 +1,8 @@
-![orb_slam3_rviz](doc/orb_slam3_rviz.gif)
-
 # Introduction
-This project explores methods and solutions for navigating drones beneath forest canopies, where GPS signals are weak and visibility is limited. The goal is to research and prototype approaches that enable drones to move safely and efficiently in complex, cluttered environments—unlocking applications in forestry, environmental monitoring, precision agriculture, and search & rescue.
+This project explores methods and solutions for navigating drones beneath forest canopies, where GPS signals are weak and visibility is limited. The goal is to rely only on visual slam, lidar, and imu for navigation. 
+
+![orb_slam3_rviz](doc/orb_slam3_rviz.gif)
+![orb_slam3](doc/orb_slam3.gif)
 
 # Milestones
 - [x] setup gazebo environment
