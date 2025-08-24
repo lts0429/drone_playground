@@ -1,6 +1,8 @@
 # Introduction
 Most of the agricultural drones rely on GPS for localization, which makes them not suitable for under canopy (GPS denied) environment. However in under canopy situation, there are enough objects for visual slam. This project applies ORB SLAM3 for localization.
 
+Checkout the demonstration [here](https://www.youtube.com/watch?v=lQ9vAMirqSs)
+
 ![orb_slam3](doc/orb_slam3.gif)
 
 # Milestones
