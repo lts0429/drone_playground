@@ -5,10 +5,11 @@ from launch_ros.actions import Node
 from launch.substitutions import LaunchConfiguration
 from launch_ros.substitutions import FindPackageShare
 from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
-from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription
+from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription, TimerAction
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch_ros.parameter_descriptions import ParameterValue
 from launch.conditions import IfCondition
+from launch.actions import TimerAction
 
 def generate_launch_description():
     
@@ -28,54 +29,19 @@ def generate_launch_description():
             
     #region: localization
     localization_params_file = os.path.join(get_package_share_directory("uav_navigation"), 'params', 'localization.yaml')    
-    ekf_node = Node(
-            package="robot_localization",
-            executable="ekf_node",
-            name="ekf_filter_node",
-            output="screen",
-            parameters=[localization_params_file, {'use_sim_time': sim}],
-            remappings=[("odometry/filtered", "odometry/local")],
-        )
-    nodes += [ekf_node]
-    
-    slam_toolbox_launch_path = os.path.join(
-        get_package_share_directory('slam_toolbox'),
+    localization_launch_path = os.path.join(
+        get_package_share_directory('uav_navigation'),
         'launch',
-        'online_async_launch.py'
-    )    
-    slam_node = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(slam_toolbox_launch_path),
+        'localization.launch.py'
+    )
+    localization_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(localization_launch_path),
         launch_arguments={
-            'use_sim_time': 'true',
-            'slam_params_file': localization_params_file
+            'use_sim_time': sim,
+            'params_file': localization_params_file,
         }.items()
     )
-    nodes += [slam_node]  
-
-    # slam_pkg_path = get_package_share_directory("orbslam3_ros2")
-    # vocab_file = os.path.join(slam_pkg_path, "config", "ORBvoc.txt")
-    # settings_file = os.path.join(slam_pkg_path, "config", "gazebo_stereo.yaml")
-    # camera_type_arg = DeclareLaunchArgument(
-    #     'camera_type', default_value='stereo', description='Camera type: mono, rgbd, stereo')
-    # nodes += [camera_type_arg]
-
-    # orb_slam_node = Node(
-    #     package='orbslam3_ros2',
-    #     executable=LaunchConfiguration('camera_type'),  # Get the executable based on camera type
-    #     output='screen',
-    #     parameters=[
-    #         {"vocab_path": vocab_file},
-    #         {"config_path": settings_file},
-    #         {"use_sim_time": True}
-    #     ],
-    #     arguments=['--ros-args', '--log-level', 'debug'],
-    #     remappings=[
-    #         ('/stereo/left/image_rect', '/camera_left/image'),
-    #         ('/stereo/right/image_rect', '/camera_right/image')
-    #     ]
-    # )
-    # nodes += [orb_slam_node]  
-                 
+    nodes += [localization_launch]
     #endregion
     
     #region: nav2 stack
@@ -96,7 +62,11 @@ def generate_launch_description():
             'params_file': nav2_open_field_params_file,
         }.items()
     )
-    nodes += [nav2_launch]
+    nav2_launch_with_delay = TimerAction(
+        period=5.0,  # delay in seconds
+        actions=[nav2_launch]
+    )
+    nodes += [nav2_launch_with_delay]
     #endregion
     
     return LaunchDescription(nodes)

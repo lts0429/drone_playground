@@ -24,7 +24,7 @@ if(BUILD_TESTING)
 endif()
 
 install(
-  DIRECTORY launch params
+  DIRECTORY launch params map
   DESTINATION share/${PROJECT_NAME}/
 )
 ament_package()

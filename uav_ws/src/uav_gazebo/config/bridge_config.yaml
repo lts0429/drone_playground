@@ -58,17 +58,14 @@
   gz_type_name: "ignition.msgs.LaserScan"
   direction: GZ_TO_ROS
 
+- ros_topic_name: "/point_cloud"
+  gz_topic_name: "/scan/points"
+  ros_type_name: "sensor_msgs/msg/PointCloud2"
+  gz_type_name: "ignition.msgs.PointCloudPacked"
+  direction: GZ_TO_ROS
+
 - ros_topic_name: "/cmd_vel"
   gz_topic_name: "/X3_custom/cmd_vel"
   ros_type_name: "geometry_msgs/msg/Twist"
   gz_type_name: "ignition.msgs.Twist"
-  direction: BIDIRECTIONAL
-
-# Service bridge for /gui/follow/offset
-- ros_service_name: "/gui/follow/offset"
-  gz_service_name: "/gui/follow/offset"
-  ros_request_type: "geometry_msgs/msg/Vector3"
-  gz_request_type: "ignition.msgs.Vector3d"
-  ros_response_type: "std_msgs/msg/Bool"
-  gz_response_type: "ignition.msgs.Boolean"
   direction: BIDIRECTIONAL

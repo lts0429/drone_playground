@@ -28,11 +28,6 @@ def generate_launch_description():
         default_value='palm_oil_plantation',
         description='world to spawn in gazebo'
     )
-    # world_arg = DeclareLaunchArgument(
-    #     'world',
-    #     default_value='industrial-warehouse/industrial-warehouse',
-    #     description='world to spawn in gazebo'
-    # )
     world = LaunchConfiguration('world')
     nodes += [world_arg]
     #endregion
@@ -76,7 +71,7 @@ def generate_launch_description():
         executable='rviz2',
         name='rviz2',
         output='screen',
-        arguments=['-d', rviz_config_file],
+        arguments=['-d', rviz_config_file, '--ros-args', '--log-level', 'error'],
         parameters=[{'use_sim_time': sim}]
     )
     nodes += [rviz_node]

@@ -42,6 +42,7 @@ def generate_launch_description():
         package='ros_gz_bridge',
         executable='parameter_bridge',
         name='parameter_bridge',
+        arguments=['--ros-args', '--log-level', 'error'],
         parameters=[{
             'config_file': ParameterValue(bridge_config, value_type=str)
         }]
@@ -54,7 +55,8 @@ def generate_launch_description():
         package='tf2_ros',
         executable='static_transform_publisher',
         name='base_to_camera_static_tf',
-        arguments=['0.1', '0', '0', '0', '0', '0', 'base_link', 'camera_link']
+        parameters=[{'use_sim_time': True}],
+        arguments=['0.1', '0', '0', '0', '0', '0', '1', 'base_link', 'camera_link']
     )
     nodes.append(static_tf_node)
     
@@ -62,7 +64,8 @@ def generate_launch_description():
         package='tf2_ros',
         executable='static_transform_publisher',
         name='left_camera_static_tf',
-        arguments=['0.1', '0.025', '0', '0', '0', '0', 'base_link', 'camera_left']
+        parameters=[{'use_sim_time': True}],
+        arguments=['0.1', '0.025', '0', '0', '0', '0', '1', 'base_link', 'camera_left']
     )
     nodes.append(left_cam_tf)
 
@@ -70,7 +73,8 @@ def generate_launch_description():
         package='tf2_ros',
         executable='static_transform_publisher',
         name='right_camera_static_tf',
-        arguments=['0.1', '-0.025', '0', '0', '0', '0', 'base_link', 'camera_right']
+        parameters=[{'use_sim_time': True}],
+        arguments=['0.1', '-0.025', '0', '0', '0', '0', '1', 'base_link', 'camera_right']
     )
     nodes.append(right_cam_tf)
     #endregion
