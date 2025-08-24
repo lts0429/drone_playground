@@ -52,7 +52,7 @@ qtcreator-*
 # Catkin custom files
 CATKIN_IGNORE
 
-# *vscode*
+*vscode*
 
 *CameraTrajectory.txt*
-*KeyframeTrajectory.txt*
+# *KeyframeTrajectory.txt*
